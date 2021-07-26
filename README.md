@@ -6,10 +6,12 @@ As of right now, this data only comes from TD Ameritrade. I will include data fr
 Here is the hierarchy of this repository:
 
 * live-stock-history
-  * MIC (["Market Identifier Code"](https://en.wikipedia.org/wiki/List_of_stock_exchanges))
+  * MIC (["Market Identifier Code"](https://www.iso20022.org/market-identifier-codes))
     * Symbol
       * year-month-day.txt
 
-One line on the file will represent 1 minute. Until I reach $200 dollars in sponsors, the file will __only__ include date from regular hours.
+One line on the file will represent one second. The file will __only__ include date from regular hours. I may consider adding a special tier to request pre/after data for one stock. 
 
 For info on the data in each line, go [here](https://developer.tdameritrade.com/quotes/apis/get/marketdata/%7Bsymbol%7D/quotes).
+
+Each text file is compressed with ZLIB. This helps with GitHub's storage limitations (and mine too!) and allows for larger data requests. 
