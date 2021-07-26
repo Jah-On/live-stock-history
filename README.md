@@ -10,7 +10,7 @@ Here is the hierarchy of this repository:
     * Symbol
       * year-month-day.txt
 
-One line on the file will represent one second. The file will __only__ include date from regular hours. I may consider adding a special tier to request pre/after data for one stock. 
+One line on the file will represent one minute (TD Ameritrade only allows 120 requests a minute : ( ). The file will __only__ include date from regular hours. I may consider adding a special tier to request pre/after data for one stock. 
 
 For info on the data in each line, go [here](https://developer.tdameritrade.com/quotes/apis/get/marketdata/%7Bsymbol%7D/quotes).
 
