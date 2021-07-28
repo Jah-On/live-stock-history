@@ -1,7 +1,7 @@
 # live-stock-history
 A home for archived live data. This is data that is often not saved afterwards like bid/ask. 
 
-As of right now, this data only comes from TD Ameritrade. With this, I can only get data for U.S. stocks. If I reach for evey $1,000 in sponsors, another country will be added. 
+As of right now, this data only comes from TD Ameritrade. With this, I can only get data for U.S. stocks. For evey $750 in sponsors, another country will be added (Not aall listings, just support for that country). 
 
 Here is the hierarchy of this repository:
 
@@ -10,7 +10,7 @@ Here is the hierarchy of this repository:
     * Symbol
       * year-month-day.txt
 
-One line on the file will represent ten seconds. The file will __only__ include date from regular hours. I may consider adding a special tier to request pre/after data for one stock. 
+One line on the file will represent three seconds. The file will __only__ include date from regular hours. I will add after hours one I reach $1,000 in sponsors. 
 
 For info on the data in each line, go [here](https://developer.tdameritrade.com/quotes/apis/get/marketdata/%7Bsymbol%7D/quotes).
 
